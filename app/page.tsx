@@ -1,19 +1,25 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
+import DashboardPreview from "@/components/DashboardPreview";
+import Pricing from "@/components/Pricing";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-
-      <main className="p-10">
-        <h1 className="text-5xl font-bold">
-          Build AI Agents Without Limits
-        </h1>
-
-        <p className="mt-4 text-lg text-gray-600">
-          The complete AI platform for creating, training, and deploying intelligent agents.
-        </p>
-      </main>
+      <Hero />
+      <Features />
+      <DashboardPreview />
+      <Pricing />
+      <Testimonials />
+      <FAQ />
+      <CTA />
+      <Footer />
     </>
   );
 }
